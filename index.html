@@ -113,7 +113,7 @@
 function registeruser()
          		{
  
-         				$.getJSON("phpfiles/uregister.php?callback=?", form.serialize(),function(data)
+         				$.getJSON("http://gordoncollege-library.com/iterm/phpfiles/uregister.php?callback=?", form.serialize(),function(data)
          				{
 							location.href="#index";
 							location.reload();
@@ -131,7 +131,7 @@ function registeruser()
          		}
          			
          		
-         			$.getJSON("phpfiles/verifyfirst.php?callback=?", lform.serialize(),function(data)
+         			$.getJSON("http://gordoncollege-library.com/iterm/phpfiles/verifyfirst.php?callback=?", lform.serialize(),function(data)
          			{
          				if (data.verified == "v1")
          				{
